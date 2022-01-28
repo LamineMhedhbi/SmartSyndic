@@ -1,0 +1,22 @@
+<odoo>
+
+    <record id="action_building" model="ir.actions.act_window">
+        <field name="name">Buildings</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">managment.building</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your Building
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="property_root" name="Property Managment" sequence="6" />
+    <menuitem id="Building_root" name="Buildings" parent="property_root" action="action_building"/>
+    
+</odoo>
+        
+        
+        
